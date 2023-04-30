@@ -28,10 +28,16 @@ final class ViewController: UIViewController {
         yellowSignal.alpha = signalOff
         greenSignal.alpha = signalOff
         
+//        redSignal.layer.cornerRadius = redSignal.frame.width / 2
+//        yellowSignal.layer.cornerRadius = yellowSignal.frame.width / 2
+//        greenSignal.layer.cornerRadius = greenSignal.frame.width / 2
+        
+    }
+    
+    override func viewWillLayoutSubviews() {
         redSignal.layer.cornerRadius = redSignal.frame.width / 2
         yellowSignal.layer.cornerRadius = yellowSignal.frame.width / 2
         greenSignal.layer.cornerRadius = greenSignal.frame.width / 2
-        
     }
 
     @IBAction func startButtonTapped() {
